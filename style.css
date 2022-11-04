@@ -1,0 +1,102 @@
+
+body {
+    border: 5px;
+    margin: 15px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #994D00;
+    color: white
+    
+}
+
+#nomerest {
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 5px 10px 20px 30px;
+    font-family:Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    box-shadow: 10px 15px rgb(121, 10, 10);    
+}
+
+
+#logo {
+    margin: 20px;
+    border-radius: 50px;
+}
+#historia {
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 5px 10px 20px 30px;
+    font-family:Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    box-shadow: 10px 15px rgb(121, 10, 10);
+}
+
+#menu {
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    text-shadow: 2px 2px 0px white, 5px 4px 0px rgba(0,0,0,0.15);
+    border-radius: 50px 10px 20px 30px;
+    box-shadow: 10px 15px rgb(121, 10, 10);
+    
+}
+#pizzas {
+    color: blue;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+}
+
+
+.content{display:flex; margin: auto;}
+
+.rTable{width: 100%; text-align: center;}
+    .rTable thead{background: maroon; font-weight: bold; color:white;}
+    .rTable tbody tr:nth-child(1n){background:rgb(239, 231, 7);}
+    .rTable tbody tr:nth-child(2n){background: rgb(239, 231, 7);}
+    .rTable th , .rTable td{padding: 7px 0;}
+
+@media screen and (max-width: 480px){
+    .content{width: 94%;}
+
+    .rTable thead{display:none;}
+    .rTable tbody td{display: flex; flex-direction: column; }
+}
+
+@media only screen and (min-width: 1200px){
+    .content{width:100%;}
+    .rTable tbody tr td:nth-child(1){width:10%;}
+    .rTable tbody tr td:nth-child(2){width:30%;}
+    .rTable tbody tr td:nth-child(3){width:20%;}
+    .rTable tbody tr td:nth-child(4){width:10%;}
+    .rTable tbody tr td:nth-child(5){width:30%;}
+}
+
+footer{
+
+	background-color: maroon;
+	width: auto;
+	height:auto;
+	float:none;
+	font-size: 18px;
+	padding: 30px 10px 30px 10px;
+    display: block;
+    border-radius: 50px;
+   
+
+}
+@media(min-width:768px){
+    .footer {padding: 100px 50px 50px 100px;}
+    .footer.Copyrigth {font-size: 16px;}
+
+}
+
+@media(min-width: 320px){
+    footer .left         { width:48%; border-bottom:0; }
+	.footer .right        { width:48%; padding-left: 4%; border-left: 1px #222424 solid; } 
+	.footer form          { margin-top: 30px; }
+	.footer form          { display: block; }
+	.footer form button   { float: none; }
+}
+
